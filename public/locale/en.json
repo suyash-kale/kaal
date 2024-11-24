@@ -1,4 +1,8 @@
 {
   "APP-NAME": "Kaal",
-  "APP-TAGLINE": "That is time."
+  "APP-TAGLINE": "That is time.",
+  "APP-DESCRIPTION": "Effortlessly orchestrate your day with Kaal. Master your time & concur you day.",
+  "SIGN-IN": "Sign In",
+  "SIGN-IN-WITH-GOOGLE": "Sign In with Google",
+  "SIGN-IN-WITH-MICROSOFT": "Sign In with Microsoft"
 }

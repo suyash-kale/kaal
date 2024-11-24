@@ -1,10 +1,12 @@
 "use client";
 import { FC, useEffect, useState } from "react";
 import { useRecoilValue } from "recoil";
+import { IntlProvider as IntlProviderPackage } from "react-intl";
 
 import { LocaleState } from "@/state/locale";
 import { intl, setIntl } from "@/utility/intl";
 import { PageMessage } from "@/components/template/page-message";
+import { eLocale } from "@/types/locale";
 
 interface IntlProviderProps {
   children: React.ReactNode;
@@ -45,5 +47,9 @@ export const IntlProvider: FC<IntlProviderProps> = ({ children }) => {
     );
   }
 
-  return <>{children}</>;
+  return (
+    <IntlProviderPackage messages={messages} locale={eLocale.English}>
+      {children}
+    </IntlProviderPackage>
+  );
 };
