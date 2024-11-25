@@ -21,13 +21,14 @@ export const Provider: FC = () => {
     <>
       <Button
         variant="secondary"
+        size="lg"
         className="w-full"
         onClick={() => signIn("google")}
       >
         <Message id="SIGN-IN-WITH-GOOGLE" />
       </Button>
       <div className="border-t my-3"></div>
-      <Button variant="secondary" className="w-full">
+      <Button variant="secondary" size="lg" className="w-full">
         <Message id="SIGN-IN-WITH-MICROSOFT" />
       </Button>
     </>
