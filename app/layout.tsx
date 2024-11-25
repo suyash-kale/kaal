@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
 
-import Logo from "@/assets/logo.jpg";
+import Logo from "@/assets/logo.png";
 import { Provider } from "@/components/provider";
 import "./globals.css";
 import Link from "next/link";
@@ -21,9 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialiased h-screen`}>
+      <body
+        className={`${poppins.className} antialiased h-screen bg-primary-foreground`}
+      >
         <Provider>
-          <header className="flex px-3 py-2 bg-primary-foreground border-b drop-shadow">
+          <header className="flex px-3 py-2 border-b drop-shadow">
             <Link href="/">
               <Image src={Logo} alt="Kaal Logo" height={30} />
             </Link>

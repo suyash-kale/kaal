@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
 
-import Logo from "@/assets/logo.jpg";
+import Logo from "@/assets/logo.png";
 import {
   Card,
   CardContent,
